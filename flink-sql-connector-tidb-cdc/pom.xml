@@ -73,6 +73,16 @@ under the License.
                                     </shadedPattern>
                                 </relocation>
                             </relocations>
+                            <filters>
+                                <filter>
+                                    <artifact>org.tikv:tikv-client-java</artifact>
+                                    <excludes>
+                                        <exclude>**/*.so</exclude>
+                                        <exclude>**/*.dll</exclude>
+                                        <exclude>**/*.jnilib</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
                         </configuration>
                     </execution>
                 </executions>
